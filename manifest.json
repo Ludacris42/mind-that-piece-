@@ -1,0 +1,22 @@
+{
+  "name": "Mind That Piece — Finance & Health Suite",
+  "short_name": "Mind That Piece",
+  "description": "Free UK tax, benefits, budget, currency & AI health tools with Max your personal AI advisor.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0E1A",
+  "theme_color": "#0A0E1A",
+  "orientation": "portrait-primary",
+  "categories": ["finance", "health", "utilities"],
+  "lang": "en-GB",
+  "icons": [
+    { "src": "/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Salary Calculator", "short_name": "Salary",  "url": "/?tab=salary",   "description": "UK & US take-home pay" },
+    { "name": "Benefits Estimator","short_name": "Benefits","url": "/?tab=benefits", "description": "Universal Credit & PIP" },
+    { "name": "Budget Planner",    "short_name": "Budget",  "url": "/?tab=budget",   "description": "Monthly budget breakdown" },
+    { "name": "Health Predictor",  "short_name": "Health",  "url": "/?tab=health",   "description": "AI health trajectory" }
+  ]
+}

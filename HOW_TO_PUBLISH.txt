@@ -1,0 +1,290 @@
+================================================================
+  MIND THAT PIECE — COMPLETE FREE PUBLISHING GUIDE
+  Website + Phone App (PWA) — Zero Cost
+  © 2026 Mind That Piece. All Rights Reserved.
+================================================================
+
+WHAT THIS PACKAGE GIVES YOU
+------------------------------
+One deployment = everything:
+  ✅ Live website (mindthatpiece.vercel.app or custom domain)
+  ✅ Secure backend API (your key hidden from users)
+  ✅ Installable phone app (PWA — no App Store needed)
+  ✅ Offline support
+  ✅ SEO ready (for Google AdSense approval)
+  ✅ Auto-deploys every time you make a change
+
+Total cost: £0 (only pay if you want a custom domain ~£10/yr)
+
+
+================================================================
+WHAT YOU NEED BEFORE YOU START (all free, 10 mins to set up)
+================================================================
+
+1. GitHub account  →  github.com/signup
+2. Vercel account  →  vercel.com  (sign up WITH GitHub)
+3. Anthropic key   →  console.anthropic.com
+   - Sign up → API Keys → Create Key
+   - Copy it — looks like: sk-ant-api03-...
+   - You get $5 free credit on signup (~1,000+ conversations)
+
+
+================================================================
+STEP 1 — CREATE YOUR GITHUB REPOSITORY
+================================================================
+
+1. Go to github.com — log in
+
+2. Click the GREEN "New" button (top left)
+
+3. Fill in:
+     Repository name:  mindthatpiece
+     Description:      Mind That Piece Finance & Health Suite
+     Visibility:       ✅ Private  (keeps your code safe)
+     
+4. Click "Create repository"
+
+5. On the next screen, click "uploading an existing file"
+
+6. Drag and drop ALL files from this unzipped folder:
+     - app/  (folder)
+     - api/  (folder)
+     - public/  (folder)
+     - package.json
+     - next.config.js
+     - vercel.json
+     - .gitignore
+     - .env.local.example
+     ⚠️  Do NOT upload .env.local if you created one
+
+7. Scroll down → click "Commit changes"
+
+Your code is now safely on GitHub. ✅
+
+
+================================================================
+STEP 2 — DEPLOY TO VERCEL (makes it live on the internet)
+================================================================
+
+1. Go to vercel.com — you should already be logged in with GitHub
+
+2. Click "Add New..." → "Project"
+
+3. You'll see your GitHub repos listed
+   Click "Import" next to "mindthatpiece"
+
+4. Vercel auto-detects Next.js — don't change any settings
+
+5. Click "Deploy"
+
+6. Wait 60-90 seconds...
+
+7. 🎉 YOUR SITE IS LIVE!
+   You'll see a URL like: mindthatpiece.vercel.app
+   Click it — your site is on the internet right now!
+
+But Max and the Health Predictor won't work yet — do Step 3.
+
+
+================================================================
+STEP 3 — ADD YOUR SECRET API KEY (makes AI work)
+================================================================
+
+1. In Vercel, click your "mindthatpiece" project
+
+2. Click "Settings" tab (top menu)
+
+3. Click "Environment Variables" (left sidebar)
+
+4. Add first variable:
+     KEY:    ANTHROPIC_API_KEY
+     VALUE:  sk-ant-your-actual-key-here
+     ✅ Tick: Production
+     ✅ Tick: Preview  
+     ✅ Tick: Development
+     Click "Save"
+
+5. Add second variable:
+     KEY:    ALLOWED_ORIGIN
+     VALUE:  https://mindthatpiece.vercel.app
+             (use YOUR actual Vercel URL from Step 2)
+     ✅ Tick: Production
+     Click "Save"
+
+6. IMPORTANT — Redeploy to apply the keys:
+   Click "Deployments" tab → click the 3 dots (...) on the
+   latest deployment → click "Redeploy" → confirm
+
+7. Verify it worked — open in browser:
+   https://mindthatpiece.vercel.app/api/health
+   
+   You should see:
+   { "status": "ok", "apiKeyConfigured": true }
+   
+   If apiKeyConfigured is false → repeat steps 4-6.
+
+
+================================================================
+STEP 4 — INSTALL ON YOUR PHONE (the PWA app)
+================================================================
+
+Your site IS the app. No App Store needed.
+
+-- ON ANDROID (Chrome) ------------------------------------
+1. Open Chrome on your Android phone
+2. Go to: https://mindthatpiece.vercel.app
+3. Wait a few seconds — a banner appears at the bottom:
+   "Add Mind That Piece to home screen"
+4. Tap "Install" or "Add"
+5. Done! The app icon appears on your home screen ✅
+
+   If no banner appears:
+   Tap the 3-dot menu (⋮) → "Add to Home screen" → "Add"
+
+-- ON iPHONE / iPAD (Safari) -----------------------------
+1. Open SAFARI (must be Safari — Chrome won't work on iOS)
+2. Go to: https://mindthatpiece.vercel.app
+3. Tap the Share button at the bottom of the screen
+   (the square with an arrow pointing up ↑)
+4. Scroll down in the share sheet
+5. Tap "Add to Home Screen"
+6. Change the name if you want → tap "Add"
+7. Done! The app icon appears on your home screen ✅
+
+The app opens fullscreen — no browser bar, no address bar.
+Looks and feels exactly like a native app.
+
+
+================================================================
+STEP 5 — GET A FREE CUSTOM DOMAIN (optional but professional)
+================================================================
+
+Instead of mindthatpiece.vercel.app you can have:
+  mindthatpiece.com  or  mindthatpiece.co.uk
+
+CHEAPEST OPTIONS:
+  porkbun.com    — often £3-8/year first year
+  namecheap.com  — £8-12/year
+  Cloudflare     — at-cost pricing, very cheap
+
+HOW TO CONNECT:
+1. Buy your domain at Namecheap/Porkbun
+2. In Vercel → your project → Settings → Domains
+3. Type your domain → click "Add"
+4. Vercel shows you DNS records to copy
+5. Go to your registrar → DNS settings → paste the records
+6. Wait 10-60 minutes for it to go live
+
+Vercel gives you FREE SSL (https) automatically. ✅
+
+
+================================================================
+STEP 6 — APPLY FOR GOOGLE ADSENSE (earn money from free users)
+================================================================
+
+Before applying, make sure your site has:
+  ✅ Home page with real content
+  ✅ Disclaimer page (in footer → click Disclaimer)
+  ✅ Privacy Policy (in footer → click Privacy Policy)
+  ✅ Terms of Service (in footer → click Terms)
+  ✅ Cookie notice (appears automatically on first visit)
+  ✅ About page (topbar → About)
+  ✅ Contact page (topbar → Contact)
+  ✅ Original content (your calculators count)
+  ✅ Mobile responsive (already done)
+  ✅ Fast loading (Vercel CDN handles this)
+  ✅ HTTPS (free with Vercel)
+
+All of the above are already built into your site. ✅
+
+HOW TO APPLY:
+1. Go to: adsense.google.com
+2. Sign in with your Google account
+3. Enter your website URL
+4. Google reviews your site (takes 1-14 days)
+5. Once approved, add your publisher ID:
+   - Open: app/layout.js
+   - Find the commented AdSense line
+   - Replace ca-pub-XXXXXXXXXXXXXXXX with your real ID
+   - Uncomment the line
+   - Push to GitHub (auto-deploys to Vercel)
+
+
+================================================================
+STEP 7 — AUTO-DEPLOY UPDATES (how to update your site)
+================================================================
+
+Every time you want to change something:
+1. Edit files on your computer
+2. Go to github.com → your repo
+3. Click the file → click the pencil icon (Edit)
+4. Make your change → click "Commit changes"
+5. Vercel automatically rebuilds in ~90 seconds
+6. Your live site is updated
+
+That's it. No manual deployment steps needed after setup.
+
+
+================================================================
+TROUBLESHOOTING
+================================================================
+
+Max not responding / "Connection problem":
+→ Visit /api/health — check apiKeyConfigured is true
+→ Check Vercel → your project → Functions → Logs
+
+"Build failed" on Vercel:
+→ Check Vercel build logs for the error
+→ Most common cause: syntax error in code
+
+Site looks broken / CSS missing:
+→ Hard refresh: Ctrl+Shift+R (desktop) or clear browser cache
+
+PWA not showing install prompt on Android:
+→ Must be served over HTTPS (Vercel does this automatically)
+→ Try: 3-dot menu → Add to Home Screen
+
+PWA won't install on iPhone:
+→ Must use Safari — not Chrome or Firefox on iOS
+→ Must be served over HTTPS
+
+Can't find your Vercel URL:
+→ Vercel dashboard → click your project → the URL is at the top
+
+Rate limit errors (too many AI requests):
+→ Normal — 10 per minute on free tier
+→ Wait 60 seconds and try again
+
+================================================================
+YOUR LIVE URLS (fill in after deployment)
+================================================================
+
+Website:        https://________________________________
+Backend health: https://________________________________/api/health
+Phone app:      Same as website URL — install from browser
+
+
+================================================================
+SUMMARY — WHAT YOU'VE BUILT
+================================================================
+
+  💷 Salary & Tax Calculator (UK + US)
+  🏛️ Benefits Estimator (Universal Credit, PIP, Child Benefit)
+  📊 Monthly Budget Planner
+  💱 Currency Converter (17 currencies)
+  📈 Inflation Calculator
+  🧬 AI Health Deterioration Predictor
+  🤖 Max — animated AI financial & health advisor
+  📱 Installable phone app (PWA)
+  🔒 Secure backend API (key never exposed)
+  ⚖️  Full legal pages (Disclaimer, Privacy, Terms, Cookies)
+  🍪 Cookie consent banner (GDPR compliant)
+  💰 AdSense ready (all required pages in place)
+  🔍 SEO optimised (meta tags, sitemap, robots.txt)
+  📶 Offline support (calculators work without internet)
+
+================================================================
+© 2026 Mind That Piece. All Rights Reserved.
+Educational purposes only. Not financial or medical advice.
+For support: support@mindthatpiece.com
+================================================================
